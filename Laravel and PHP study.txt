@@ -1,0 +1,14 @@
+Laravel
+1. Laravel mix
+2.Laravel eloquent
+3.Implode
+4.Explode
+5.Queune
+6.scout search
+7.algolia search
+8. Arithmetic Operetor // + - %  *
+9. Asignment  // = += -+ /=
+10. Comparison operetor  // == !=  < > => <=
+11. Logical Opretor // && !! !
+12. Parent Thesis // () first-bracket
+13. Ternary Oparetors //  ?

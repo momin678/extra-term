@@ -1,0 +1,13 @@
+1. mouse hover image zoom link
+2. ul li get id in use body on click
+3. in line data collection from database in blade file
+4. get data by ajax
+5. created_at time convert to local time
+6. text-editor plugin
+7. zoom-out plugin
+8. sweet Alert
+9. windows close click any where
+10. beautiful input field for file or image
+11. instant multiple images show
+12. instant images show with beautiful input fied
+13. option text match in-line in blade.php
