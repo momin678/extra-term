@@ -1,1 +1,68 @@
 
+Beautiful Flash Notification in Laravel
+1st step-> composer require laracasts/flash
+2nd step-> if have no bootstrap.min.css please include
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+3nd step-> create a js file like custom.js your public directory and like the app/master blade file
+4th step-> pest below this code in custom.js file
+($.fn.toggleAttr = function (e, a, t) {
+    return this.each(function () {
+        var l = $(this);
+        l.attr(e) == a ? l.attr(e, t) : l.attr(e, a);
+    });
+}),
+(function ($) {
+    //"use strict";
+    (ADM.data = { csrf: $('meta[name="csrf-token"]').attr("content"), appUrl: $('meta[name="app-url"]').attr("content"), fileBaseUrl: $('meta[name="file-base-url"]').attr("content") }),
+    (ADM.plugins = {
+        notification: function (e = "dark", a = "") {
+            $.notify(
+                { message: a },
+                {
+                    showProgressbar: !0,
+                    delay: 2500,
+                    mouse_over: "pause",
+                    placement: { from: "bottom", align: "right" },
+                    animate: { enter: "animated fadeInUp", exit: "animated fadeOutDown" },
+                    type: e,
+                    template:
+                    '<div data-notify="container" class="alert alert-{0}" role="alert"><span data-notify="message">{2}</span><div style="height:5px;" class="progress" data-notify="progressbar"><div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%;"></div></div></div>',
+                }
+            );
+        },
+    }),
+    setInterval(function () {
+        ADM.extra.refreshToken();
+    }, 36e5);
+})(jQuery);
+5th step-> add this two link in app/master blade file in the bodey tag in toward to end
+(notification.js file auto create when run flash composer command in this directory)
+<script src="{{asset('assets/notification.js') }}"></script>
+<script src="{{asset('assets/AccountDatagateCore.js') }}"></script>
+6th step-> add this code in app/master blade file under in the head tag in towards to end
+  <script>
+    var ADM = ADM || {};        
+  </script>
+7th step-> add this code in app/master blade file under in the body tag in towards to end
+ <script> 
+  @foreach (session('flash_notification', collect())->toArray() as $message)
+	  ADM.plugins.notification('{{ $message['level'] }}', '{{ $message['message'] }}');
+	@endforeach
+</script>
+8th step-> finally you wish to choose flash message as per requairment of your function need
+You may also do:
+
+flash('Message')->success(): Set the flash theme to "success".
+flash('Message')->error(): Set the flash theme to "danger".
+flash('Message')->warning(): Set the flash theme to "warning".
+flash('Message')->overlay(): Render the message as an overlay.
+flash()->overlay('Modal Message', 'Modal Title'): Display a modal overlay with a title.
+flash('Message')->important(): Add a close button to the flash message.
+flash('Message')->error()->important(): Render a "danger" flash message that must be dismissed.
+for exmple 
+public function store()
+{
+    .................
+    flash('Data store successful!')->success();
+    return home();
+}
