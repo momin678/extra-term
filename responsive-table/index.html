@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Footable - Responsive Table</title>
+    <meta name="viewport" content="width = device-width, initial-scale = 1.0, minimum-scale = 1.0, maximum-scale = 1.0, user-scalable = no"/>
+    <link rel="stylesheet" href="css/footable.core.css" />
+</head>
+<body>
+
+<table class="table footable">
+    <thead>
+    <tr>
+        <th>İsim</th>
+        <th data-hide="phone">Şehir</th>
+        <th data-hide="phone,tablet">Eşya</th>
+        <th data-hide="phone,tablet">Hayvan</th>
+        <th data-hide="phone,tablet">Araba</th>
+        <th data-hide="phone,tablet">Meyve</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>Fatih</td>
+        <td>Ankara</td>
+        <td>Sehba</td>
+        <td>Köpek</td>
+        <td>Honda</td>
+        <td>Çilek</td>
+    </tr>
+    <tr>
+        <td>Ercan</td>
+        <td>İstanbul</td>
+        <td>Masa</td>
+        <td>Kedi</td>
+        <td>Fiat</td>
+        <td>Elma</td>
+    </tr>
+    <tr>
+        <td>Osman</td>
+        <td>Adana</td>
+        <td>Koltuk</td>
+        <td>Tavuk</td>
+        <td>BMW</td>
+        <td>Kivi</td>
+    </tr>
+    <tr>
+        <td>Mehmet</td>
+        <td>İzmir</td>
+        <td>Sandalye</td>
+        <td>Serçe</td>
+        <td>Mercedes</td>
+        <td>Karpuz</td>
+    </tr>
+    </tbody>
+</table>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="js/footable.js"></script>
+<script type="text/javascript">
+    $(function () {
+        $('.footable').footable();
+    });
+</script>
+</body>
+</html>
