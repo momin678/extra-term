@@ -1,11 +1,55 @@
-Laravel
-1. Laravel mix
+%%%%%%%%%%%%%%%%  Laravel  %%%%%%%%%%%%%%
+================================================
+1.Laravel mix
+Ans: Laravel Mix, a package developed by Laracasts creator Jeffrey Way, provides a fluent API for defining webpack build steps for your Laravel application using several common CSS and JavaScript pre-processors.
+In a nutshell, Laravel Mix compiles, minifies and stores your assets in your application’s public folder for easy reference
+------------------------------------------------
+Laravel Mix, Laracasts নির্মাতা জেফরি ওয়ে দ্বারা তৈরি একটি প্যাকেজ, বেশ কিছু সাধারণ CSS এবং JavaScript প্রি-প্রসেসর ব্যবহার করে আপনার Laravel অ্যাপ্লিকেশনের জন্য ওয়েবপ্যাক বিল্ড ধাপগুলি সংজ্ঞায়িত করার জন্য একটি সাবলীল API প্রদান করে।
+সংক্ষেপে, লারাভেল মিক্স সহজ রেফারেন্সের জন্য আপনার অ্যাপ্লিকেশনের পাবলিক ফোল্ডারে আপনার সম্পদগুলিকে সংকলন করে, ছোট করে এবং সঞ্চয় করে।
+================================================
 2.Laravel eloquent
-3.Implode
+Ans: Laravel includes Eloquent, an object-relational mapper (ORM) that makes it enjoyable to interact with your database. When using Eloquent, each database table has a corresponding "Model" that is used to interact with that table. In addition to retrieving records from the database table, Eloquent models allow you to insert, update, and delete records from the table as well.
+-----------------------------------------------
+Laravel এ Eloquent, একটি অবজেক্ট-রিলেশনাল ম্যাপার (ORM) অন্তর্ভুক্ত করে যা আপনার ডাটাবেসের সাথে ইন্টারঅ্যাক্ট করতে আনন্দদায়ক করে তোলে। Eloquent ব্যবহার করার সময়, প্রতিটি ডাটাবেস টেবিলের একটি সংশ্লিষ্ট "মডেল" থাকে যা সেই টেবিলের সাথে ইন্টারঅ্যাক্ট করতে ব্যবহৃত হয়। ডাটাবেস টেবিল থেকে রেকর্ড পুনরুদ্ধার করার পাশাপাশি, ইলোকুয়েন্ট মডেল আপনাকে টেবিল থেকে রেকর্ড সন্নিবেশ, আপডেট এবং মুছে ফেলার অনুমতি দেয়।
+===============================================
+%%%%%%%%%%%%%%%%  PHP  %%%%%%%%%%%%%%
+1.Implode
+Ans: The implode() is a builtin function in PHP and is used to join the elements of an array. implode() is an alias for PHP | join() function and works exactly same as that of join() function.
+
+If we have an array of elements, we can use the implode() function to join them all to form one string. We basically join array elements with a string. Just like join() function , implode() function also returns a string formed from the elements of an array.
+-----------------------------------------------
+447 / 5,000
+Translation results
+ইমপ্লোড() পিএইচপি-তে একটি বিল্টইন ফাংশন এবং এটি একটি অ্যারের উপাদানগুলিতে যোগ দিতে ব্যবহৃত হয়। implode() হল PHP এর একটি উপনাম | join() ফাংশন এবং join() ফাংশনের মতোই কাজ করে।
+
+যদি আমাদের কাছে উপাদানগুলির একটি অ্যারে থাকে তবে আমরা একটি স্ট্রিং তৈরি করতে তাদের সকলকে যুক্ত করতে implode() ফাংশন ব্যবহার করতে পারি। আমরা মূলত একটি স্ট্রিং দিয়ে অ্যারে উপাদানে যোগদান করি। join() ফাংশনের মতো, implode() ফাংশনও একটি অ্যারের উপাদান থেকে গঠিত একটি স্ট্রিং প্রদান করে। 
+===============================================
 4.Explode
+Ans: explode() is a built in function in PHP used to split a string in different strings. The explode() function splits a string based on a string delimiter, i.e. it splits the string wherever the delimiter character occurs. This functions returns an array containing the strings formed by splitting the original string.
+-----------------------------------------------
+explode() হল পিএইচপি-তে একটি বিল্ট-ইন ফাংশন যা একটি স্ট্রিংকে বিভিন্ন স্ট্রিংয়ে বিভক্ত করতে ব্যবহৃত হয়। explode() ফাংশন একটি স্ট্রিং ডিলিমিটারের উপর ভিত্তি করে একটি স্ট্রিংকে বিভক্ত করে, অর্থাৎ যেখানেই ডিলিমিটার অক্ষরটি ঘটে সেখানেই এটি স্ট্রিংটিকে বিভক্ত করে। এই ফাংশন মূল স্ট্রিং বিভক্ত করে গঠিত স্ট্রিং ধারণকারী একটি অ্যারে প্রদান করে।
+===============================================
 5.Queune
-6.scout search
-7.algolia search
+Ans: While building your web application, you may have some tasks, such as parsing and storing an uploaded CSV file, that take too long to perform during a typical web request. Thankfully, Laravel allows you to easily create queued jobs that may be processed in the background. By moving time intensive tasks to a queue, your application can respond to web requests with blazing speed and provide a better user experience to your customers.
+-----------------------------------------------
+আপনার ওয়েব অ্যাপ্লিকেশন তৈরি করার সময়, আপনার কিছু কাজ থাকতে পারে, যেমন একটি আপলোড করা CSV ফাইল পার্স করা এবং সংরক্ষণ করা, যা একটি সাধারণ ওয়েব অনুরোধের সময় সম্পাদন করতে খুব বেশি সময় নেয়। সৌভাগ্যক্রমে, লারাভেল আপনাকে সহজেই সারিবদ্ধ কাজ তৈরি করতে দেয় যা পটভূমিতে প্রক্রিয়া করা যেতে পারে। সময়ের নিবিড় কাজগুলিকে একটি সারিতে স্থানান্তরিত করার মাধ্যমে, আপনার অ্যাপ্লিকেশনটি উজ্জ্বল গতির সাথে ওয়েব অনুরোধগুলির প্রতিক্রিয়া জানাতে পারে এবং আপনার গ্রাহকদের একটি ভাল ব্যবহারকারীর অভিজ্ঞতা প্রদান করতে পারে।
+===============================================
+6.scout search with algolia
+Ans: Adding or implementing Algolia in Laravel has become super easy, and that has been made possible by Laravel Scout. Laravel scout offers a powerful scout package that amplifies the integration of full-text search directly through your model.
+
+Laravel Scout renders a simple, driver-based solution for implementing a full-text search to your Eloquent models. Utilizing model observers, Scout automatically retains your search indexes in sync with your Eloquent records
+-----------------------------------------------
+লারাভেলে অ্যালগোলিয়া যোগ করা বা বাস্তবায়ন করা খুবই সহজ হয়ে উঠেছে, এবং এটি লারাভেল স্কাউট দ্বারা সম্ভব হয়েছে। লারাভেল স্কাউট একটি শক্তিশালী স্কাউট প্যাকেজ অফার করে যা সরাসরি আপনার মডেলের মাধ্যমে পূর্ণ-পাঠ্য অনুসন্ধানের একীকরণকে প্রশস্ত করে।
+
+Laravel Scout আপনার ইলোকুয়েন্ট মডেলগুলিতে একটি পূর্ণ-পাঠ্য অনুসন্ধান বাস্তবায়নের জন্য একটি সহজ, ড্রাইভার-ভিত্তিক সমাধান প্রদান করে। মডেল পর্যবেক্ষকদের ব্যবহার করে, স্কাউট স্বয়ংক্রিয়ভাবে আপনার বাগ্মী রেকর্ডের সাথে সিঙ্ক করে আপনার অনুসন্ধান সূচী ধরে রাখে
+===============================================
+7.prunable method
+Ans: Sometimes you may want to periodically delete models that are no longer needed. When will use prunable method
+-----------------------------------------------
+কখনও কখনও আপনি পর্যায়ক্রমে এমন মডেলগুলি মুছতে চাইতে পারেন যেগুলির আর প্রয়োজন নেই৷ প্রুনেবল পদ্ধতি কখন ব্যবহার করবেন
+===============================================
+===============================================
+%%%%%%%%%%%%%%%%  JavaScript  %%%%%%%%%%%%%%
 8. Arithmetic Operetor // + - %  *
 9. Asignment  // = += -+ /=
 10. Comparison operetor  // == !=  < > => <=
