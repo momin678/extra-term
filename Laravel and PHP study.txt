@@ -67,6 +67,9 @@ Ans: Sometimes you may want to periodically delete models that are no longer nee
 -----------------------------------------------
 কখনও কখনও আপনি পর্যায়ক্রমে এমন মডেলগুলি মুছতে চাইতে পারেন যেগুলির আর প্রয়োজন নেই৷ প্রুনেবল পদ্ধতি কখন ব্যবহার করবেন
 ===============================================
+8. put and patch method deferent
+i.Put has High Bandwidth use, on other hand Patch has Low Bandwidth use
+ii. Once time Put multiple data update with togather but Patch only one data update 
 ===============================================
 %%%%%%%%%%%%%%%%  JavaScript  %%%%%%%%%%%%%%
 8. Arithmetic Operetor // + - %  *
